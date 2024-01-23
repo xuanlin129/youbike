@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#top-bar {
+  z-index: 99999;
+}
+
+#content {
+  margin: 66px;
+  padding: 40px 0;
+}
+#content .card {
+  margin-bottom: 1rem;
+}
+#content .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+#footer iconify-icon {
+  font-size: 24px;
+}
