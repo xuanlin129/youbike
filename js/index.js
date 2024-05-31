@@ -7,11 +7,11 @@ const search = document.querySelector('#search-input')
         for (const info of data) {
           // 顏色
           let color = ''
-          if (info.sbi / info.tot === 0) {
+          if (info.available_rent_bikes / info.total === 0) {
             color = 'grey'
-          } else if (info.sbi / info.tot <= 0.3) {
+          } else if (info.available_rent_bikes / info.total <= 0.3) {
             color = '#F5303E'
-          } else if (info.sbi / info.tot <= 0.7) {
+          } else if (info.available_rent_bikes / info.total <= 0.7) {
             color = '#FF9D19'
           } else {
             color = '#B9BF0D'
@@ -23,10 +23,10 @@ const search = document.querySelector('#search-input')
                   <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-center fw-bold">${stat}</h5>
                     <ul class="mt-auto">
-                      <li>剩餘: ${info.sbi} 台</li>
+                      <li>剩餘: ${info.available_rent_bikes} 台</li>
                       <li>區域: ${info.sarea}</li>
-                      <li>經度: ${info.lng}</li>
-                      <li>緯度: ${info.lat}</li>
+                      <li>經度: ${info.longitude}</li>
+                      <li>緯度: ${info.latitude}</li>
                     </ul>
                   </div>
                 </div>
@@ -47,11 +47,11 @@ const search = document.querySelector('#search-input')
           for (const info of data) {
             // 顏色
             color = ''
-            if (info.sbi / info.tot === 0) {
+            if (info.available_rent_bikes / info.total === 0) {
               color = 'grey'
-            } else if (info.sbi / info.tot <= 0.3) {
+            } else if (info.available_rent_bikes / info.total <= 0.3) {
               color = '#F5303E'
-            } else if (info.sbi / info.tot <= 0.7) {
+            } else if (info.available_rent_bikes / info.total <= 0.7) {
               color = '#FF9D19'
             } else {
               color = '#B9BF0D'
@@ -64,10 +64,10 @@ const search = document.querySelector('#search-input')
                   <div class="card-body">
                     <h5 class="card-title text-center fw-bold">${stat}</h5>
                     <ul class="mt-auto">
-                      <li>剩餘: ${info.sbi} 台</li>
+                      <li>剩餘: ${info.available_rent_bikes} 台</li>
                       <li>區域: ${info.sarea}</li>
-                      <li>經度: ${info.lng}</li>
-                      <li>緯度: ${info.lat}</li>
+                      <li>經度: ${info.longitude}</li>
+                      <li>緯度: ${info.latitude}</li>
                     </ul>
                   </div>
                 </div>
