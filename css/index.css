@@ -11,22 +11,23 @@
 }
 
 #content {
-  margin: 66px;
-  padding: 40px 0;
+  margin: 80px 12px 24px 12px;
+  padding: 20px 0;
 }
-#content .card {
+#stations-row .card {
   margin-bottom: 1rem;
 }
-#content .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0 0 5px #ccc;
-          box-shadow: 0 0 5px #ccc;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+#stations-row .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   z-index: 999;
 }
 
 #footer iconify-icon {
   font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  #content { margin: 72px 8px 12px 8px; }
 }

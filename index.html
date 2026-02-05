@@ -9,9 +9,9 @@
   <link rel="shortcut icon" href="https://www.youbike.com.tw/region/favicon.ico">
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-  <!-- cdnjs/ boostrap, axios, iconify -->
+  <!-- cdnjs/ bootstrap, axios, iconify -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' />
-  <scrip src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js' />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js'></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <link rel="stylesheet" href="./css/index.css">
@@ -26,17 +26,21 @@
       <a class="navbar-brand" href="#">
         <img id="logo" src="https://www.youbike.com.tw/region/assets/images/logo.svg" width="120px" alt="">
       </a>
-      <form>
-        <input id="search-input" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+      <form id="search-form" class="d-flex" role="search">
+        <input id="search-input" class="form-control me-2" type="search" placeholder="站名或區域搜尋" aria-label="Search">
       </form>
     </div>
   </nav>
   <!-- 內容區 -->
   <div id="content">
     <div class="container">
-      <div class="row align-items-center">
-
+      <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <div id="legend" class="d-flex gap-3"></div>
+          <div id="status-msg" class="small"></div>
+        </div>
       </div>
+      <div id="stations-row" class="row align-items-stretch"></div>
     </div>
   </div>
 
